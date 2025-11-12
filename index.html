@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSY BAR - Landing Page Formation Believemy</title>
+    <link rel="stylesheet" href="src/css/output.css">
+</head>
+<body>
+    <video src="/src/assets/images/welcome.mp4" autoplay loop muted
+    class="absolute -z-10 object-cover w-full h-screen"></video>
+    <main class="container mx-auto min-h-screen flex flex-col">
+        <header class="flex items-center justify-between pt-5">
+            <nav>
+                <ul class="flex gap-5 text-gray-500">
+                    <li>BUSY Bar</li>
+                    <li><a href="#" class="underline">Boutique</a></li>
+                    <li><a href="#" class="underline">Téléchargement</a></li>
+                    <li><a href="#" class="underline">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="#">
+                 <img src="/src/assets/images/badge.svg" alt="Badge" class="w-52 grayscale-100
+                hover:grayscale-0 duration-200 hover:-translate-y-1">
+            </a>
+        </header>
+        <section class="flex mt-[40vh] mx-auto flex-col max-w-[550px] text-xl grow">
+            <p>
+                <span class="font-bold">BUSY Bar</span> est un 
+                dispositif multi-outil de productivité avec un écran 
+                LED pixelisé. Minuteur de concentration avec fonction
+                de blocage des distractions sur votre téléphone et PC.
+                Entiérement personnalisable, open-source et pret pour 
+                la maison connectée.
+            </p>
+            <button class="bg-orange-500 text-white px-14 py-4 rounded-lg
+            hover:bg-black duration-300 cursor-pointer block mx-auto m-6">Acheter</button>    
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-5 pb-5 opacity-80 mt-20">
+            <div class="flex items-start gap-3"> 
+                <img src="/src/assets/images/feature-one.svg"
+                alt="Fonctionnaité numéro une" class="w-14">
+                <div>
+                    <h3 class="text-xl mb-1.5">
+                        Outil de productivité</h3>
+                    <div class="text-sm">
+                        Blocage des disttractions, message BUSY
+                        personnalisé, minuteur 
+                        de concentration, synchronisation 
+                        multiplateforme
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-start gap-3"> 
+                <img src="/src/assets/images/feature-two.svg"
+                alt="Fonctionnaité numéro deux" class="w-14">
+                <div>
+                    <h3 class="text-xl mb-1.5">
+                        Applications et intégration</h3>
+                    <div class="text-sm">
+                        Bibliothèque d'applications, connexion
+                        à des logiciels tiers, intégrations avec
+                        les événements de calendrier et les appels
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-start gap-3"> 
+                <img src="/src/assets/images/feature-three.svg"
+                alt="Fonctionnaité numéro trois" class="w-14">
+                <div>
+                    <h3 class="text-xl mb-1.5">
+                        Support maison connectée</h3>
+                    <div class="text-sm">
+                        Connectez-vous à Google Home et
+                        Apple Home via e protocole Matter 
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-start gap-3"> 
+                <img src="/src/assets/images/feature-four.svg"
+                alt="Fonctionnaité numéro quatre" class="w-14">
+                <div>
+                    <h3 class="text-xl mb-1.5">
+                        Pour les développeurs </h3>
+                    <div class="text-sm">
+                        API HTTP ouverte, SDK open-source,
+                        bibliothèques Python / Go / Javascript,
+                        MQTT, sans verrouillage fournisseur 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="flex h-screen">
+        <div class="w-1/2 flex items-center p-10">
+            <div>
+                <h2 class="text-5xl">Montrer que vous etes occupé</h2>
+                <p class="text-xl mt-5">Empechez les autres d'interrompre votre concentration profonde. L'écran 
+                    affiche que vous etes occupé et quand vous serez à nouveau disponible.
+                </p>
+                <div class="flex items-end mt-10">
+                   <img src="./src/assets/images/demo-one.png" alt="démo une" 
+                   class="w-32 h-32 object-contain">
+                   <div>
+                      <h3 class="text-xl">Activation instantanée</h3>
+                      <div class="text-sm mt-1">
+                        Activez et désacativez le statut
+                        BUSY manuellement avec un large 
+                        bouton. Fonctionne entiérement hors
+                        ligne, sans logiciel supplémentaire
+                        requis.
+                      </div>
+                   </div>
+                </div>
+                 <div class="flex items-end mt-5">
+                   <img src="./src/assets/images/demo-two.png" alt="démo deux" 
+                   class="w-32 h-32 object-contain">
+                   <div>
+                      <h3 class="text-xl">Set timer</h3>
+                      <div class="text-sm mt-1">
+                        Set an optinal expiration timer
+                        BUSY using the scroll wheel to let
+                        others know when you'll be 
+                        available again.
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <video src="/src/assets/images/busy.mp4" autoplay loop muted
+               class="-z-10 object-cover w-full h-screen relative">
+            </video>
+        </div>
+    </section>
+</body>
+</html>
